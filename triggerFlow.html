@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trigger Power Automate Flow</title>
+    <script type="text/javascript">
+        function triggerFlow() {
+            var xhr = new XMLHttpRequest();
+            var url = "https://prod-53.westeurope.logic.azure.com:443/workflows/a7fd8d695b8e42f795441b45f5ef458e/triggers/manual/paths/invoke?api-version=2016-06-01";
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send();
+            alert("Flow triggered!");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="triggerFlow()">Trigger Flow</button>
+</body>
+</html>
