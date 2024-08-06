@@ -5,7 +5,7 @@
     <script type="text/javascript">
         function triggerFlow() {
             var xhr = new XMLHttpRequest();
-            var url = "https://prod-53.westeurope.logic.azure.com:443/workflows/a7fd8d695b8e42f795441b45f5ef458e/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=GaLvUuIdySm6PUcaWUbOwoFrDS5_5XA5vxekESCFBeo"
+            var url = "https://prod-53.westeurope.logiXXX"; // Replace this with the actual URL
             xhr.open("POST", url, true);
             xhr.setRequestHeader("Content-Type", "application/json");
             xhr.send();
@@ -14,12 +14,9 @@
     </script>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            padding: 0;
+            background: transparent;
         }
         button {
             background-color: #007BFF;
@@ -31,6 +28,9 @@
             cursor: pointer;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s ease;
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
         button:hover {
             background-color: #0056b3;
@@ -41,6 +41,6 @@
     </style>
 </head>
 <body>
-    <button onclick="triggerFlow()">Start</button>
+    <button onclick="triggerFlow()">Klik hier!</button>
 </body>
 </html>
